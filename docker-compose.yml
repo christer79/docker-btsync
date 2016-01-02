@@ -1,0 +1,11 @@
+btsync:
+  build: .
+  ports: 
+   - 55555:55555
+   - 8888:8888
+  volumes:
+   - /home/christer/test-btsync:/sycn/storage
+  environment:
+   - SYNCKEY=christer
+   - MYHOSTNAME=christer
+  restart: always
